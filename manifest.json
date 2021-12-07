@@ -4,22 +4,15 @@
     "manifest_version": 3,
     "version": "1.0",
     "action": {
-        "default_popup": "./App/index.html",
-        "default_icon":{
-            "32":"./icons/32.png",
-            "48":"./icons/48.png"
-        }
+        "default_popup": "./App/index.html"
+        
     },
     "permissions": ["activeTab","scripting"],
     "content_scripts":[
         {
             "matches": ["https://www.linkedin.com/*"],
-            "js": ["./app.js"]
+            "js": ["./app/js/index.js"]
         }
-    ],
-    "icons": {
-        "32":"./icons/32.png",
-        "48":"./icons/48.png"
-    }
+    ]
     
 }
